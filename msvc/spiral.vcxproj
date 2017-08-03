@@ -142,6 +142,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\p0267_plot\msvc\io2d_plot.vcxproj">
+      <Project>{ebd56469-24dd-4ac0-a092-7e1bfb919d9a}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\spiral.cpp" />

@@ -14,6 +14,8 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\P0267_plot\include;$(SolutionDir)..\P0267_plot\P0267_RefImpl\N3888_RefImpl\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup />
