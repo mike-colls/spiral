@@ -12,12 +12,16 @@ int main()
 
     const int margin{10};
     xy_plot plot{width - 2 * margin, height - 2 * margin, margin, margin};
-  //  plot.back_color( io2d::rgba_color::wheat );
+    plot.back_color( io2d::rgba_color::lemon_chiffon );
+    plot.draw_grid(false);
 
     auto spiral_line = plot.add_line();
-    for( int angle = 0; angle < 720; angle += 20 )
+    const int max_angle = 720;
+    for( int angle = 0; angle < max_angle; angle += 20 )
     {
-        spiral_line->add_point( {static_cast<float>( angle * cos( angle * io2d::pi<double> / 180.0 ) ), static_cast<float>( angle * sin( angle * io2d::pi<double> / 180.0 ) )} );
+        spiral_line->add_point(
+            {static_cast<float>( angle * cos( angle * io2d::pi<double> / 180.0 ) / max_angle ),
+            static_cast<float>( angle * sin( angle * io2d::pi<double> / 180.0 ) / max_angle)} );
     }
 
     plot.draw( image );
