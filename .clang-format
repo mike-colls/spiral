@@ -1,0 +1,12 @@
+BasedOnStyle: Google
+AccessModifierOffset : -4
+AllowShortFunctionsOnASingleLine: All
+ColumnLimit: 0
+IndentCaseLabels : false
+NamespaceIndentation : All
+IndentWidth: 4
+UseTab:          Never
+BreakBeforeBraces: Allman
+SpacesInParentheses: true
+SpaceBeforeParens: Never
+
