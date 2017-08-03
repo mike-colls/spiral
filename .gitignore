@@ -32,3 +32,4 @@
 *.app
 /msvc/Debug_x86/
 /msvc/.vs/
+/msvc/*.png
